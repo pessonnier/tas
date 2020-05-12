@@ -1,6 +1,6 @@
 # Présentation
 Le but de ce document est de guider l'installation de l'outil de supervision PoWA sur une distribution CentOS 7. Il est basé sur la [documentation](https://powa.readthedocs.io/en/latest/) en ligne, mais tente d'apporter des clarifications.
-Les prochaines version de ce documents se trouveront à l'adresse suivante : https://powa.s3.eu-west-3.amazonaws.com/doc_install.zip
+Les prochaines versions de ce documents se trouveront à l'adresse suivante : https://powa.s3.eu-west-3.amazonaws.com/doc_install.zip
 
 # Vue d'ensemble de l'installation
 [PoWA](https://powa.readthedocs.io/en/latest/index.html) est composé d'une extension postgreSQL nommée [PoWA-archivist](https://github.com/powa-team/powa-archivist), d'une application web nommée powa-web. PoWA-archivist historise les métriques provenant d'une base PostgreSQL locale ou distante et d'un processus nommé [PoWA-collector](https://github.com/powa-team/powa-collector) permettant le transfert desmétriques depuis la base supervisée vers le superviseur. [PoWA-web](https://github.com/powa-team/powa-web) permet d'explorer ses métriques. L'installation se déroulera en plusieurs étapes.
@@ -682,5 +682,5 @@ firewall-cmd --zone=public --permanent --add-port=5432/tcp
 systemctl restart firewalld
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA4MzU3OTJdfQ==
+eyJoaXN0b3J5IjpbMTUwOTkyMzA0MywtMTA2MDgzNTc5Ml19
 -->
